@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="flex-row" style="display: block;height: 640rpx;width: 640rpx;"> -->
+        <image src = "../../images/cover.png" style = "width: 640rpx;height: 640rpx;" bindtouchend = "GotoAbout"></image>
+        <view class="flex-view-item" style = "height: 60rpx;"></view>
+        <view class="flex-row" style="display: block;height: 640rpx;width: 640rpx;"> 
+      <view class="flex-view-item" style = "height: 200rpx;">
+        <button type="default" class="btn1" bindtap="onTapBtn_Photo" hover-class="btn-hover1">看图说话</button>
+      </view>
+      <view class="flex-view-item" style = "height: 40rpx;"></view>
+      <view class="flex-view-item" style = "height: 200rpx;">
+        <button type="default" class="btn2" bindtap="onTapBtn_Trans" hover-class="btn-hover2">即时翻译</button>
+      </view>
+  </view>
+
+
+
+
+
+</view>

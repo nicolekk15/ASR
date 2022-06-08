@@ -1,0 +1,53 @@
+<!--pages/page_trans/page_trans.wxml-->
+<view class="container">
+  <view class="flex-row" style="display: block;width: 640rpx;">
+    <view class="flex-view-item" > 
+        <a>翻译设置：</a>
+    </view>
+    <view class="flex-row" style="float: left;display: flex;flex-direction: row;margin-top: 20rpx;"> 
+        <view >待译语言：</view>
+        <Select  prop-array='{{selectArray2}}' bind:select-getsrcl='GetSrcl'></Select>
+      </view>
+      <view class="flex-row" style="float: left;display: flex;flex-direction: row;margin-top: 10rpx;"> 
+        <view >目标语言：</view>
+        <Select style = "float: left;" prop-array='{{selectArray1}}' bind:select-getdstl='GetDstl'></Select>
+    </view>
+  </view>
+  <view class="flex-view-item" style="height: 40rpx;"></view>
+  <view class="flex-row" style="display: block;">
+    <view class="flex-view-item" > 
+        <a>原文：</a>
+    </view>
+    <!-- 文本框：语音识别结果 -->
+    <view class="flex-view-item" style = "height: 350rpx;width: 640rpx;"> 
+        <scroll-view scroll-y="true" class="demo-scroll-block" style = "width: auto;">
+          <view>
+              <text>{{RecognizeResult_trans}}</text>
+          </view>
+        </scroll-view>
+    </view>
+    <view class="flex-view-item" style = "height: 40rpx;"> 
+    </view>
+    <view class="flex-view-item" > 
+        <a>译文：</a>
+    </view>
+    <!-- 文本框：文字翻译结果 -->
+    <view class="flex-view-item" style = "height: 350rpx;width: 640rpx;"> 
+        <scroll-view scroll-y="true" class="demo-scroll-block" style = "width: auto;">
+          <view>
+            <text>{{TranslationResult_trans}}</text>
+          </view>
+        </scroll-view>
+    </view>
+
+    <view class="flex-view-item" style = "height: 30rpx;"> 
+    </view>
+    <view class="flex-view-item" style = "height: 100rpx;width:150rpx;margin-top: 20rpx;float:left">
+        <button type="default" class="btnrf" type="primary" bindtouchend="RefreshPage" hover-class="btnrf-hover">刷新</button>
+    </view>
+    <!-- 按键：按下录音，松开停止并显示识别结果 -->
+    <view class="flex-view-item" style = "height: 100rpx;width:450rpx;margin-top: 20rpx;float:right">
+        <button type="default" class="btn2" type="primary" bindtouchstart="BtnStart" bindtouchend="BtnStop" hover-class="btn-hover">{{transbtntext}}</button>
+    </view>
+  </view>
+</view>

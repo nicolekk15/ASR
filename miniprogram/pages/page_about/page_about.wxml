@@ -1,0 +1,31 @@
+<!--pages/page_about/page_about.wxml-->
+<view class="container">
+  <view class="flex-view-item"> 
+        <image  src = "../../images/cover1.png" style = "width: 640rpx;height:350rpx;margin-top: 55rpx;" bindtouchend="GotoIndex"></image>
+  </view>
+  <view class="flex-view-item" style = "width: 640rpx;height: 900rpx;"> 
+    <scroll-view scroll-y="true" class="demo-scroll-block" style = "width: auto;">
+      <view>
+        <text>产品名称：语音识别小程序
+              产品功能：
+              1.看图说话：
+                  用一段话描述图片内容，程序判断是否描述正确
+              2.即时翻译：
+                  用户说一段话（一般不超过一分钟），程序同时将语音转文字并显示在界面上
+
+              应用场景：
+              1.看图说话可以辅助训练儿童识别物体
+              2.当写文档或聊天时，不想打字也不想发语音时可以使用即时翻译
+              3.其他需要语音转文字的事情
+
+              创作团队：倪寻珂、李明洋
+              版本清单：
+              20220508
+              细化每个页面的处理，修订部分页面细节
+              20220506
+              初始化，初步设计各页面功能</text>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

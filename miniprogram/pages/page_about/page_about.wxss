@@ -1,0 +1,7 @@
+/* pages/page_about/page_about.wxss */
+.demo-scroll-block {
+  width: 100%;
+  height: 900rpx;
+  margin-top: 20rpx;
+  /* background-color:rgb(255, 255, 255); */
+}

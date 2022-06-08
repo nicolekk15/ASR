@@ -1,0 +1,28 @@
+<!--pages/page_photo/page_photo.wxml-->
+<view class="container">
+  <view class="flex-row" style="display: block;">
+      <!-- 图片：点击切换 -->
+      <view class="flex-view-item"> 
+        <image  src = "{{PhotoSRC}}" style = "width: 640rpx;height: 640rpx;" bindtouchend = "ImgSwitch" ></image>
+      </view>
+      <!-- 文本框：语音识别结果 -->
+      <view class="flex-row" style="display: flex;flex-direction: row;margin-top: 20rpx;"> 
+        <view >使用语言：</view>
+        <Select prop-array='{{selectArray}}' bind:select-getphosrcl='GetphoSrcl'></Select>
+      </view>
+      <view class="flex-view-item" style = "width: 640rpx;height:400rpx;"> 
+        <scroll-view scroll-y="true" class="demo-scroll-block" style = "width: auto;">
+          <view>
+              <text>{{RecognizeResult_photo}}\n{{JudgeResult}}</text>
+          </view>
+        </scroll-view>
+      </view>
+      <!-- 按键：按下录音，松开停止并显示识别结果 -->
+      <view class="flex-view-item" style = "height: 100rpx;width:150rpx;margin-top: 20rpx;float:left">
+        <button type="default" class="btnrf" type="primary" bindtouchend="RefreshPage" hover-class="btnrf-hover" >刷新</button>
+      </view>
+      <view class="flex-view-item" style = "height: 100rpx;width:450rpx;margin-top: 20rpx;float:right">
+        <button type="default" class="btn1" type="primary" bindtouchstart="BtnStart" bindtouchend="BtnStop" hover-class="btn-hover" >{{phobtntext}}</button>
+      </view>
+  </view>
+</view>

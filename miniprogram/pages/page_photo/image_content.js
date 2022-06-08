@@ -1,0 +1,50 @@
+var dataFromJson=
+{lists:[
+    {
+        'key':1,
+        'value':"苹果"
+    },
+    {
+        'key':2,
+        'value':"葡萄"
+    },
+    {
+        'key':3,
+        'value':"香蕉"
+    },
+    {
+        'key': 4,
+        'value':"草莓"
+    },
+    {
+        'key':5,
+        'value':"桃子"
+    },
+    {
+        'key':6,
+        'value':"柠檬"
+    },
+    {
+        'key':7,
+        'value':"桑葚"
+    },
+    {
+        'key':8,
+        'value':"山竹"
+    },
+    {
+        'key':9,
+        'value':"石榴"
+    },
+    {
+        'key':10,
+        'value':"西瓜"
+    },
+    {
+        'key':11,
+        'value':"无花果"
+    }
+]}
+module.exports={
+    postdata: dataFromJson
+}

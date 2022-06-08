@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/page_photo/page_photo",
+    "pages/page_trans/page_trans",
+    "pages/page_about/page_about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#666597",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "语音识别小程序"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#B1C8DD",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/menu.png",
+        "selectedIconPath": "images/menu_s.png"
+      },
+      {
+        "pagePath": "pages/page_photo/page_photo",
+        "iconPath": "images/pho.png",
+        "selectedIconPath": "images/pho_s.png"
+      },
+      {
+        "pagePath": "pages/page_trans/page_trans",
+        "iconPath": "images/trans.png",
+        "selectedIconPath": "images/trans_s.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
